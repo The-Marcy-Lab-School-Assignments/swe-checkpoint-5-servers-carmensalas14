@@ -79,13 +79,13 @@ In `server/index.js`:
 
 In `server/models/Pet.js`:
 1. Create an in-memory array with 2-3 starter pets (each with an `id` and `name`). Use the `getId()` helper to assign each pet's `id`.
-2. Implement all 5 static methods: `create`, `list`, `find`, `update`, `delete`
+2. Implement all 5 methods: `create`, `list`, `find`, `update`, `destroy`
 3. Model methods should NOT use `req` or `res` — they only manage data
 
 ### Step 3: Build the Controllers
 
 In `server/controllers/petControllers.js`:
-1. Import the `Pet` model
+1. Import the petModel methods
 2. Implement all 5 controller functions: `createPet`, `listPets`, `getPet`, `updatePet`, `deletePet`
 3. Each controller should parse inputs from `req`, call the appropriate model method, and send the response with the correct status code
 4. Handle error cases: return `400` for missing `name`, return `404` for pets not found
